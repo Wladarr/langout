@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LangOut</title>
+  <link rel="SHORTCUT ICON" href="img/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li class="link"><a href="#features" style="color: #F0E68C;">О нас</a></li>
+        <li class="link"><a href="#langs" style="color: #F0E68C;">Языки</a></li>
+        <li class="link"><a href="#comments" style="color: #F0E68C;">Отзывы</a></li>
+        <li class="link"><a href="#contacts" style="color: #F0E68C;">Связаться с нами</a></li>
+        <li class="link">
+          <input type="button" name="btn" class="btn btn-outline navbtn" value="Подписаться" data-toggle="modal" data-target="#exampleModal2">
+        </li>
+      </ul>
+    </nav>
+    <h1><span style="color: #8B4513;">Lang</span><span style="color: #1E8449;">Out</span></h1>
+  </header>
+  <main class="jumbotron">
+    <article>
+      <h2 id="features">Наши особенности</h2>
+      <div class="flex-contain">
+        <div class="card" style="width: 18rem;">
+            <img src="img/cab.png" class="card-img-top info-image" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Комфортная обстановка</h5>
+              <p class="card-text">Обуччение проходит в комфортных, хорошо оборудованных кабинетах. Гибкий график посещений который создается под каждого студента.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="img/tech.png" class="card-img-top info-image" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Передовая система обучения</h5>
+              <p class="card-text">Обучение проходит по передовым наработкам иностранных специалистов. Качественно обученные преподаватели.</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="img/diplom.png" class="card-img-top info-image" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Релевантность дипломов</h5>
+              <p class="card-text">Дипломы, выданые по окончанию курса, можно использовать как показатель знаний языка в дальнейшем.</p>
+            </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <h2 id="langs">Языки для изучения</h2>
+      <div class="flex-contain">
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="img/eng.png" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Английский</h5>
+              <p class="card-text">Изучение идет тремя уровнями. Текущий уровень обучения определяется после собеседования. По окончанию каждого курса выдается диплом. Также есть возможность сдать международный тест на уровень знаний языка. Семестровое и годовое обучение. Полная и помесячная оплата. <span style="color: #FFC800;">На данный момент все уроки проходят в онлайн-классах.</span></p>
+              <input type="button" name="btn" class="btn btn-outline-info" value="Купить" data-toggle="modal" data-target="#exampleModal">
+            </div>
+        </div>
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="img/de.png" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Немецкий</h5>
+              <p class="card-text">Изучение идет тремя уровнями. Текущий уровень обучения определяется после собеседования. По окончанию каждого курса выдается диплом. Также есть возможность сдать международный тест на уровень знаний языка. Семестровое и годовое обучение. Полная и помесячная оплата. <span style="color: #FFC800;">На данный момент все уроки проходят в онлайн-классах.</span></p>
+              <input type="button" name="btn" class="btn btn-outline-info" value="Купить" data-toggle="modal" data-target="#exampleModal">
+            </div>
+        </div>
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="img/sp.png" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Испанский</h5>
+              <p class="card-text">Изучение идет тремя уровнями. Текущий уровень обучения определяется после собеседования. По окончанию каждого курса выдается диплом. Также есть возможность сдать международный тест на уровень знаний языка. Семестровое и годовое обучение. Полная и помесячная оплата. <span style="color: #FFC800;">На данный момент все уроки проходят в онлайн-классах.</span></p>
+              <input type="button" name="btn" class="btn btn-outline-info" value="Купить" data-toggle="modal" data-target="#exampleModal">
+            </div>
+        </div>
+      </div>
+      <div class="flex-contain">
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="img/fr.png" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Французский</h5>
+              <p class="card-text">Изучение идет тремя уровнями. Текущий уровень обучения определяется после собеседования. По окончанию каждого курса выдается диплом. Также есть возможность сдать международный тест на уровень знаний языка. Семестровое и годовое обучение. Полная и помесячная оплата. <span style="color: #FFC800;">На данный момент все уроки проходят в онлайн-классах.</span></p>
+              <input type="button" name="btn" class="btn btn-outline-info" value="Купить" data-toggle="modal" data-target="#exampleModal">
+            </div>
+        </div>
+        <div class="card text-white bg-dark" style="width: 18rem;">
+            <img src="img/pl.png" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Польский</h5>
+              <p class="card-text">Изучение идет тремя уровнями. Текущий уровень обучения определяется после собеседования. По окончанию каждого курса выдается диплом. Также есть возможность сдать международный тест на уровень знаний языка. Семестровое и годовое обучение. Полная и помесячная оплата. <span style="color: #FFC800;">На данный момент все уроки проходят в онлайн-классах.</span></p>
+              <input type="button" name="btn" class="btn btn-outline-info" value="Купить" data-toggle="modal" data-target="#exampleModal">
+            </div>
+        </div>
+        <div class="card text-white bg-dark third-card" style="width: 18rem;">
+            <img src="img/prt.png" class="card-img" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Португальский</h5>
+              <p class="card-text">Изучение идет тремя уровнями. Текущий уровень обучения определяется после собеседования. По окончанию каждого курса выдается диплом. Также есть возможность сдать международный тест на уровень знаний языка. Семестровое и годовое обучение. Полная и помесячная оплата. <span style="color: #FFC800;">На данный момент все уроки проходят в онлайн-классах.</span></p>
+              <input type="button" name="btn" class="btn btn-outline-info" value="Купить" data-toggle="modal" data-target="#exampleModal">
+            </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <h2 id="comments">Отзывы наших студентов</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-dark"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-dark"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="bg-dark"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="flex-contain">
+            <div class="card" style="width: 18rem;">
+              <img src="img/user.png" class="card-img-top" alt="">
+              <div class="card-body">
+                  <h5 class="card-title">John</h5>
+                  <p class="text-muted"><i>Курс: Английский язык</i></p>
+                  <hr>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="img/user.png" class="card-img-top" alt="">
+              <div class="card-body">
+                  <h5 class="card-title">Simon</h5>
+                  <p class="text-muted"><i>Курс: Испанский язык</i></p>
+                  <hr>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="flex-contain">
+            <div class="card" style="width: 18rem;">
+              <img src="img/user.png" class="card-img-top" alt="">
+              <div class="card-body">
+                  <h5 class="card-title">Derek</h5>
+                  <p class="text-muted"><i>Курс: Французский язык</i></p>
+                  <hr>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="img/user.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Paul</h5>
+                  <p class="text-muted"><i>Курс: Польский язык</i></p>
+                  <hr>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>  
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="flex-contain">
+            <div class="card" style="width: 18rem;">
+              <img src="img/user.png" class="card-img-top" alt="">
+              <div class="card-body">
+                  <h5 class="card-title">James</h5>
+                  <p class="text-muted"><i>Курс: Португальский язык</i></p>
+                  <hr>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="img/user.png" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Garry</h5>
+                  <p class="text-muted"><i>Курс: Немецкий язык</i></p>
+                  <hr>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </article>
+    <article>
+      <h2 id="contacts">Связаться с нами</h2>
+      <form class="form-contact" id="contact-form">
+        <input type="text" name="username" placeholder="Имя:" class="form-contact-field form-control" required><br>
+        <input type="email" name="usermail" placeholder="E-mail:" class="form-contact-field form-control" required><br>
+        <input type="number" name="phone" placeholder="Номер телефона(необязательно):" class="form-contact-field form-control">
+        <textarea name="question" placeholder="Ваш вопрос:" class="form-contact-area form-control" required></textarea><br>
+        <input type="submit" name="subm" value="Написать нам" class="btn btn-success contact-btn">
+        <input type="reset" name="res" value="Сбросить" class="btn btn-outline-secondary contact-btn">
+      </form>
+    </article>
+  </main>
+  <footer>
+    <div class="flex-contain">
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li class="footer-list">About</li>
+          <li class="footer-list">Services</li>
+          <li class="footer-list">Careers</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Account</h3>
+        <ul>
+          <li class="footer-list">Account</li>
+          <li class="footer-list">Invite friends</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Privacy</h3>
+        <ul>
+          <li class="footer-list">Privacy</li>
+          <li class="footer-list">Terms</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Stay in touch</h3>
+        <div class="grid-contain">
+          <a href="https://www.instagram.com"><img src="img/insta.png" class="social-media"></a>
+          <a href="https://uk-ua.facebook.com"><img src="img/fbook.png" class="social-media"></a>
+          <a href="https://twitter.com/?lang=ru"><img src="img/twitter.png" class="social-media"></a>
+          <a href="https://www.linkedin.com"><img src="img/lin.png" class="social-media"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- JQuerry script -->
+<script type="text/javascript" src="scroll.js"></script>
+
+<!-- modal 1 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Оформить заявку на курс</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="return false">
+          <input type="email" name="mail" placeholder="Ваш e-mail: " class="form-control" id="email" required><br>
+          <input type="number" name="cardNumber" placeholder="Номер вашей карты: " class="form-control" id="cardnum" min="1" required><br>
+          <select class="form-control" id="course">
+            <option>Выберите язык:</option>
+            <option>Английский</option>
+            <option>Немецкий</option>
+            <option>Испанский</option>
+            <option>Французский</option>
+            <option>Польский</option>
+            <option>Португальский</option>
+          </select><br>
+          <select class="form-control" id="form" required>
+            <option>Выберите форму обучения:</option>
+            <option>Online</option>
+          </select><br>
+          <input type="text" name="yourName" placeholder="Ваше имя: " class="form-control" id="name" required><br>
+          <input type="number" name="phoneNumber" placeholder="Ваш номер телефона: " class="form-control" id="phonenum" min="1" required><br>
+          <input type="submit" name="submit" class="btn btn-primary" value="Отправить" onclick="Course()">
+          <input type="reset" name="reset" class="btn btn-secondary" value="Сбросить"><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="alert alert-success" role="alert">
+          Сейчас действует скидка в 20% на все курсы. Стоимость курса и подтверждение будут находиться в сообщении на эл.почте.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal 2 -->
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Оформить подписку</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="return false">
+          <input type="email" name="mail" placeholder="Ваш e-mail: " class="form-control" required><br>
+          <input type="number" name="cardNumber" placeholder="Номер вашей карты: " class="form-control" min="1" required><br>
+          <select class="form-control" id="subscribe">
+            <option>Выберите язык:</option>
+            <option>Английский</option>
+            <option>Немецкий</option>
+            <option>Испанский</option>
+            <option>Французский</option>
+            <option>Польский</option>
+            <option>Испанский</option>
+          </select><br>
+          <input type="text" name="yourName" placeholder="Ваше имя: " class="form-control" required><br>
+          <input type="submit" name="submit" class="btn btn-primary" value="Отправить" onclick="Subscribe()">
+          <input type="reset" name="reset" class="btn btn-secondary" value="Сбросить"><br>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="alert alert-warning" role="alert">
+          Сейчас действует скидка в 10% на подписку. Стоимость подписки и подтверждение будут находиться в сообщении на эл.почте.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="course.js"></script>
+<script type="text/javascript" src="subscribe.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+*{
+	margin: 0;
+}
+header{
+	height: 450px;
+	background-image: url(img/fon.png);
+	background-size: cover;
+	padding-bottom: 50px;
+}
+nav{
+	background: rgba(103, 103, 103, 0.9);
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 2;
+}
+main{
+	padding-bottom: 30px;
+}
+footer{
+	margin-top: -30px;
+	height: 200px;
+	background: rgba(0, 0, 0, 0.77);
+	color: rgb(220, 220, 220);
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder{
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+h1{
+	font-family: Verdana;
+	font-size: 45px;
+	width: 160px;
+	padding-top: 65px;
+	margin-left: 12%;
+}
+h1:hover{
+	transform: scale(1.04);
+	transition: .4s ease-in-out;
+	cursor: pointer;
+}
+h2{
+	font-size: 27px;
+	padding-top: 20px;
+	text-align: center;
+}
+h3{
+	font-size: 23px;
+	text-align: center;
+}
+a{
+	font-size: 20px;
+	display: inline-block;
+    color: #F0E68C;
+    line-height: 1;
+    text-decoration:none;
+    cursor: pointer;
+    position:relative;
+}
+.nav-list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 8px;
+}
+.link a:after {
+    background-color: #F0E68C;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.link a:hover{
+	text-decoration: none;
+}
+.link a:hover:after,
+.link a:focus:after {
+    width: 100%;
+}
+.link{
+	display: inline;
+	list-style-type: none;
+	margin-left: 25px;
+	cursor: pointer;
+	color: rgb(220, 220, 220);
+}
+.navbtn{
+	color: #F0E68C;
+	border: 1px solid #F0E68C;
+}
+.navbtn:hover{
+	color: #000;
+	background: #F0E68C;
+}
+.dropdown-menu{
+	width: 300px;
+}
+.modal-btn{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.flex-contain{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 30px;
+}
+.card{
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+.card-img-top{
+	height: 250px;
+	width: auto;
+}
+.card-img{
+	height: 180px;
+}
+.rights{
+	margin-top: 30px;
+	margin-left: 40%;
+}
+.info-rights{
+	text-align: center;
+}
+.networking{
+	width: 100px;
+	height: 100px;
+	margin-top: 20px;
+}
+.networking:hover{
+	cursor: pointer;
+	transform: scale(1.07);
+	transition: .7s ease-in-out;
+}
+.btn-outline-info{
+	width: 100%;
+}
+.alert{
+	width: 100% !important;
+}
+.form-contact{
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 20%;
+}
+.form-contact-field{
+	width: 60%;
+}
+.form-contact-area{
+	float: right;
+	margin-top: -162px;
+	margin-right: 4%;
+	width: 235px;
+	height: 162px !important;
+}
+.contact-btn{
+	width: 150px;
+}
+.footer-list{
+	list-style-type: none;
+	text-align: left;
+	margin-left: -25px;
+}
+.footer-button{
+	margin-left: 25%;
+}
+.grid-contain{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+}
+a .social-media{
+	width: 65px;
+	height: 65px;
+}
+a .social-media:hover{
+	filter: sepia(100%);
+	transition: .4s ease-in-out;
+}
+.chosen{
+	border: 3px solid #37FF00;
+	
+}
+@media only screen and (max-width: 1434px){
+	.form-contact-field{
+		width: 100%;
+	}
+	.form-contact-area{
+		float: none;
+		width: 100%;
+		height: auto !important;
+		margin-top: 20px;
+	}
+}
+@media only screen and (max-width: 750px){
+	h5{
+		font-size: 18px;
+		text-align: center;
+	}
+	a{
+		font-size: 19px;
+	}
+	p{
+		font-size: 15px;
+	}
+	.info-image,
+	.card-img,
+	.card-img-top{
+		display: none;
+	}
+	.link{
+		margin-left: -10px;
+	}
+}
+@media only screen and (max-width: 682px){
+	.contact-btn{
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 658px){
+	.link a{
+		display: none;
+	}
+}
+@media only screen and (max-width: 630px){
+	a .social-media{
+		width: 45px;
+		height: 45px;
+	}
+}
+@media only screen and (max-width: 604px){
+	h3{
+		font-size: 21px;
+	}
+	h5{
+		font-size: 17px;
+	}
+	p{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 510px){
+	h3{
+		font-size: 18px;
+	}
+	h5{
+		font-size: 15px;
+	}
+	p{
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 470px){
+	h3{
+		font-size: 15px;
+	}
+	h5{
+		font-size: 13px;
+	}
+	p{
+		font-size: 11px;
+	}
+	.footer-button{
+		display: none;
+	}
+	a .social-media{
+		width: 37px;
+		height: 37px;
+	}
+	.grid-contain{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+}
